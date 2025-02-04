@@ -57,7 +57,7 @@ Certifique-se de que a extensão [Wokwi para VS Code](https://docs.wokwi.com/pt-
 
 ### 2. LEDs
 
-Após pressionar o **Botão A**, todos os LEDs são acesos e, seguindo a sequência **azul → vermelho → verde**, são gradativamente desligados a cada 3000 ms (3 segundos). Na placa BitDogLab o semáforo é representado pelo LED RGB, seguindo a sequência **branco (todas as cores) → violeta (azul+vermelho) → vermelho**.
+Após pressionar o **Botão A**, todos os LEDs são acesos e, seguindo a sequência **azul → vermelho → verde**, são gradativamente desligados a cada 3000 ms (3 segundos). Na placa BitDogLab os LEDs são representados pelo LED RGB, seguindo a sequência **branco (todas as cores) → violeta (azul+vermelho) → vermelho**.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/dc17d18b-5b38-4ad1-9805-47e0d5b5b13d" alt="GIF demonstrativo" width="300"/>
