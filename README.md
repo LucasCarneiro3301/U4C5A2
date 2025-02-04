@@ -26,7 +26,7 @@ __Para este trabalho, os seguintes componentes e ferramentas se fazem necessári
 ### 1. Clone o repositório
 Abra o terminal e execute o comando abaixo para clonar o repositório em sua máquina:
 ```bash
-git clone https://github.com/LucasCarneiro3301/U4C4O12T.git
+git clone https://github.com/LucasCarneiro3301/U4C5A2.git
 ```
 
 ### 2. Configure o ambiente de desenvolvimento
@@ -65,7 +65,7 @@ Após pressionar o **Botão A**, todos os LEDs são acesos e, seguindo a sequên
 
 ### 3. Temporização One-Shot
 
-A função `add_alarm_in_ms()` configura um temporizador do tipo _one-shot_, que executa a função _callback_ após um atraso de _N_ segundos e depois se encerra. Nesse projeto, há 3 atrasos: Atraso de 3 segundos, que desativa o LED azul, atraso de 6 segundos, que desativa o LED verde e, por fim, um atraso de 9 segundos, que desativa o LED vermelho.
+A função `add_alarm_in_ms()` configura um temporizador do tipo _one-shot_, que executa a função _callback_ após um atraso de _n_ segundos e depois se encerra. Nesse projeto, há 3 atrasos: Atraso de 3 segundos, que desativa o LED azul, atraso de 6 segundos, que desativa o LED verde e, por fim, um atraso de 9 segundos, que desativa o LED vermelho.
 
 ### 4. Interrupções
 
