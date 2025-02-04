@@ -65,7 +65,7 @@ Após pressionar o **Botão A**, todos os LEDs são acesos e, seguindo a sequên
 
 ### 3. Temporização One-Shot
 
-A função `add_alarm_in_ms()` configura um temporizador do tipo _one-shot_, que executa a função _callback_ após um atraso de _N_ segundos e depois se encerra. Esse tipo de temporização é útil para eventos que devem ocorrer apenas uma vez após um intervalo específico, sem a necessidade de laços de espera ativos. Nesse projeto, há 3 atrasos: Atraso de 3 segundos, que desativa o LED azul, atraso de 6 segundos, que desativa o LED verde e, por fim, um atraso de 9 segundos, que desativa o LED vermelho.
+A função `add_alarm_in_ms()` configura um temporizador do tipo _one-shot_, que executa a função _callback_ após um atraso de _N_ segundos e depois se encerra. Nesse projeto, há 3 atrasos: Atraso de 3 segundos, que desativa o LED azul, atraso de 6 segundos, que desativa o LED verde e, por fim, um atraso de 9 segundos, que desativa o LED vermelho.
 
 ### 4. Interrupções
 
