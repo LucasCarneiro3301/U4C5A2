@@ -9,7 +9,7 @@ __Descrição:__
 Este projeto implementa um sistema de controle de LEDs acionado por um botão, em que, ao ser pressionado, os três LEDs são ligados simultaneamente. A transição entre estados ocorre com um temporizador configurado para um atraso de 3 segundos, desligando gradativamente os LEDs até restar nenhum aceso. As mudanças de estado são gerenciadas por funções de _callback_ do temporizador, garantindo a execução ordenada das etapas. Além disso, o botão só pode ser acionado novamente após o desligamento completo do último LED, impedindo interferências durante a execução das rotinas de temporização.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/d23e8eb8-8fa6-45ef-a9d6-d5285357a5a8" alt="GIF demonstrativo" width="300"/>
+  <img src="https://github.com/user-attachments/assets/d23e8eb8-8fa6-45ef-a9d6-d5285357a5a8" alt="GIF demonstrativo" width="400"/>
 </div>
 
 __Para este trabalho, os seguintes componentes e ferramentas se fazem necessários:__
@@ -60,7 +60,7 @@ Certifique-se de que a extensão [Wokwi para VS Code](https://docs.wokwi.com/pt-
 Após pressionar o **Botão A**, todos os LEDs são acesos e, seguindo a sequência **azul → verde → vermelho**, são gradativamente desligados a cada 3000 ms (3 segundos). Na placa BitDogLab o semáforo é representado pelo LED RGB, seguindo a mesma sequência de cores.
 
 <div align="center">
-  <img src="" alt="GIF demonstrativo" width="300"/>
+  <img src="https://github.com/user-attachments/assets/dc17d18b-5b38-4ad1-9805-47e0d5b5b13d" alt="GIF demonstrativo" width="300"/>
 </div>
 
 ### 3. Temporização One-Shot
