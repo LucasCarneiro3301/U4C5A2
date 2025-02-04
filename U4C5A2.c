@@ -13,8 +13,8 @@
 #define BTNB 6
 
 const uint blue = 11;  // VERDE na BitDogLab
-const uint green = 12; // AZUL na BitDogLab
-const uint red = 13; // VERMELHO na BitDogLab
+const uint red = 12; // AZUL na BitDogLab
+const uint green = 13; // VERMELHO na BitDogLab
 
 bool rgb_state = false; // Estado dos 3 LEDs
 bool btn_state = false; // Estado do botão A
@@ -39,8 +39,8 @@ int main() {
         if (rgb_state && btn_state) { // Só é executada se rgb_state (LEDs ligados) e btn_state (botão pressionado) estiverem true
             RGB_config(0x111); // Liga os 3 LEDs
             add_alarm_in_ms(3e3, turn_off_led, (void*)&blue, false); //Desliga o LED azul
-            add_alarm_in_ms(6e3, turn_off_led, (void*)&green, false); //Desliga o LED verde
-            add_alarm_in_ms(9e3, turn_off_led, (void*)&red, false); //Desliga o LED vermelho
+            add_alarm_in_ms(6e3, turn_off_led, (void*)&red, false); //Desliga o LED vermelho
+            add_alarm_in_ms(9e3, turn_off_led, (void*)&green, false); //Desliga o LED verde
             btn_state = false;
         } 
 
@@ -55,11 +55,11 @@ int main() {
 
 // Inicializa e configura os LEDs RGB como saída. Inicializa e configura os botões como entradas.
 void setup() {
-    gpio_init(red);
-    gpio_set_dir(red, GPIO_OUT); 
-
     gpio_init(green);
     gpio_set_dir(green, GPIO_OUT); 
+
+    gpio_init(red);
+    gpio_set_dir(red, GPIO_OUT); 
 
     gpio_init(blue);
     gpio_set_dir(blue, GPIO_OUT);
@@ -75,8 +75,8 @@ void setup() {
 
 // Configura o estado de cada um dos 3 LEDs
 void RGB_config(unsigned short int state) {
-    gpio_put(red,state & 0x100);
-    gpio_put(green,state & 0x010);
+    gpio_put(green,state & 0x100);
+    gpio_put(red,state & 0x010);
     gpio_put(blue,state & 0x001);
 }
 
@@ -95,6 +95,6 @@ void gpio_irq_handler(uint gpio, uint32_t events) {
 // Rotina de temporização one-shot. A cada 3 seg um LED é desligado
 int64_t turn_off_led(alarm_id_t id, void *user_data) {
     gpio_put(*(uint*)user_data, false);
-    if(*(uint*)user_data == red) rgb_state = false; // Se for a vez do LED vermelho, então todos os LEDs foram, enfim, desligados
+    if(*(uint*)user_data == green) rgb_state = false; // Se for a vez do LED verde, então todos os LEDs foram, enfim, desligados
     return 0;
 }
