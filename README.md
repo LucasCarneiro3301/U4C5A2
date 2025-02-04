@@ -9,7 +9,7 @@ __Descrição:__
 Este projeto implementa um sistema de controle de LEDs acionado por um botão, em que, ao ser pressionado, os três LEDs são ligados simultaneamente. A transição entre estados ocorre com um temporizador configurado para um atraso de 3 segundos, desligando gradativamente os LEDs até restar nenhum aceso. As mudanças de estado são gerenciadas por funções de _callback_ do temporizador, garantindo a execução ordenada das etapas. Além disso, o botão só pode ser acionado novamente após o desligamento completo do último LED, impedindo interferências durante a execução das rotinas de temporização.
 
 <div align="center">
-  <img src="" alt="GIF demonstrativo" width="300"/>
+  <img src="https://github.com/user-attachments/assets/d23e8eb8-8fa6-45ef-a9d6-d5285357a5a8" alt="GIF demonstrativo" width="300"/>
 </div>
 
 __Para este trabalho, os seguintes componentes e ferramentas se fazem necessários:__
