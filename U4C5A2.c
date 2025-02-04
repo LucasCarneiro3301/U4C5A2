@@ -12,9 +12,9 @@
 #define BTNA 5
 #define BTNB 6
 
-const uint blue = 11;
-const uint green = 12;
-const uint red = 13;
+const uint blue = 11;  // VERDE na BitDogLab
+const uint green = 12; // AZUL na BitDogLab
+const uint red = 13; // VERMELHO na BitDogLab
 
 bool rgb_state = false; // Estado dos 3 LEDs
 bool btn_state = false; // Estado do botão A
